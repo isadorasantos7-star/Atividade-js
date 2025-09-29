@@ -64,4 +64,6 @@ button:hover { /*subclasse*/
     color: #636e72;
     text-align: center;
     min-height: 24px; /*altura em baixo*/
+    max-width: 340px;   /* largura máxima do bloco */
+    word-wrap: break-word; /* força quebra quando necessário */
 }
