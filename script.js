@@ -1,4 +1,4 @@
-let Qnt = 0;
+let Qnt = 0; /*é uma variável que muda ao longo do programa*/
 
 function comprar() {
     let qtdCompra = parseInt(document.getElementById("qtdCompra").value);

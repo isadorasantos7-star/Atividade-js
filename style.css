@@ -1,61 +1,61 @@
 
 body {
-    background: linear-gradient(120deg, #e0eafc, #cfdef3);
+    background-color: rgb(49, 95, 131);
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0; /*espaço entre coisas*/
 }
 
 h1 {
     text-align: center;
-    color: #2c3e50;
+    color: #ffffff;
     margin-top: 40px;
-    margin-bottom: 20px;
 }
 
 section {
     background: #fff;
-    max-width: 400px;
-    margin: 40px auto;
-    padding: 40px 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.08);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 400px; /*largura maximo*/
+    margin: 40px auto; /*auto é para centralizar a section no meio e margin é a altura da h1 para section*/
+    padding: 90px 90px; /*testa e largura branca*/
+    border-radius: 400px; /*borda arredondada*/
+    box-shadow: 0 40px 20px rgb(44, 62, 80); /*deixar com degrade atrás do círculo*/
+    display: flex; /*permitir centralizar*/
+    flex-direction: column; /*deixar em coluna*/
+    align-items: center; /*centralizar*/
+
 }
 
 input[type="number"] {
-    width: 85%;
-    padding: 12px;
-    margin: 18px 0;
-    border: 1px solid #b2bec3;
+    width: 85%; /*largura dos inputs, onde vamos adicionar alguma informação*/
+    padding: 12px; /*altura dentro do intupt, o quadradinho que vamos colocar a informação*/
+    margin: 18px 0; /*altura entre input e a section*/
+    border: 1px solid #b2bec3; /*tamanho da borda*/
     border-radius: 8px;
-    font-size: 1rem;
-    transition: border-color 0.2s;
+    font-size: 1rem; /*tamanho da fonte*/
+    transition: border-color 0.2s; /*mudar a cor da borda em 0.2 segundos*/
     background: #f7fafd;
 }
 
-input[type="number"]:focus {
-    border-color: #0984e3;
-    outline: none;
+input[type="number"]:focus { /*subiclasse*/
+    border-color: rgb(9, 132, 227); /* a cor que muda*/
+    outline: none; /*ela normalmente é preta, isso faz com que deixe a cor que botamos e tira a expessura da margem*/
 }
 
-button {
-    width: 90%;
-    padding: 12px;
-    margin-bottom: 18px;
+button { 
+    width: 90%; /*largura*/
+    padding: 12px; /*altura*/
+    margin-bottom: 18px; /*altura entre o sair e o vender*/
     background: #0984e3;
     color: #fff;
-    border: none;
+    border: none; /*expessura da margem 0*/
     border-radius: 8px;
     font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.2s;
+    cursor: pointer; /*deixar ele para clicar*/
+    transition: background 0.2s; /*em 0.2 segundos*/
 }
 
-button:hover {
-    background: #74b9ff;
+button:hover { /*subclasse*/
+    background: #74b9ff; /*mudar a cor do button*/
 }
 
 #resultado {
@@ -63,5 +63,5 @@ button:hover {
     font-size: 1.1rem;
     color: #636e72;
     text-align: center;
-    min-height: 24px;
+    min-height: 24px; /*altura em baixo*/
 }
